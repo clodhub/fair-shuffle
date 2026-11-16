@@ -1,6 +1,6 @@
 {
   "name": "fair-shuffle",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "title": "Fair shuffle",
   "description": "Random numbers behind one interface: a seeded generator that tests can replay, a crypto-backed generator for play, and a Fisher-Yates shuffle over either.",
   "facilities": [
@@ -80,5 +80,124 @@
       }
     ],
     "notes": "Pure library; no provider limits apply. The secure source relies on the host's cryptographic generator."
+  },
+  "classes": [
+    {
+      "reference": {
+        "name": "ourapps-ae/fair-shuffle-class",
+        "version": "1.0.0",
+        "digest": "c1d4c6e507d8bfdadc06f8e87ed065b4a42b3916c2bb3c5e15362b4c84c473b2"
+      },
+      "descriptor": {
+        "format": 1,
+        "name": "ourapps-ae/fair-shuffle-class",
+        "version": "1.0.0",
+        "provides": [
+          {
+            "type": "ae/random-source",
+            "version": "1.0.0",
+            "path": "classes/fair-shuffle-class/random-source.json",
+            "modules": {
+              "server": [
+                "server/index.ts"
+              ]
+            }
+          }
+        ],
+        "requires": [],
+        "settings": {
+          "type": "object",
+          "properties": {
+            "source": {
+              "type": "string",
+              "pattern": "^[a-z][a-z0-9-]{0,63}$"
+            }
+          },
+          "required": [
+            "source"
+          ],
+          "additionalProperties": false
+        },
+        "inventory": [
+          {
+            "path": "classes/fair-shuffle-class/check.mjs",
+            "digest": "a7c4e6a77155932ec82041d1da37c67994e1d1c03d92269b8cb28e16696a3be0"
+          },
+          {
+            "path": "classes/fair-shuffle-class/random-source.json",
+            "digest": "84de99d834e0d221cfbf11d4307f6fe85bdbcfa802dcc936c702f4ac19d35552"
+          },
+          {
+            "path": "classes/fair-shuffle-class/runtime.mjs",
+            "digest": "7440f3891614c423f74668cb5a2445fea58bbfa4d7c740c8e8a855d1d9300d43"
+          }
+        ],
+        "verification": [
+          {
+            "id": "shared",
+            "root": "package",
+            "argv": [
+              "node",
+              "classes/fair-shuffle-class/check.mjs"
+            ],
+            "cwd": ".",
+            "prepare": [],
+            "tools": {
+              "node": "26.5"
+            },
+            "fixtures": [
+              "classes/fair-shuffle-class/check.mjs"
+            ],
+            "locks": [],
+            "network": false,
+            "timeoutSeconds": 60,
+            "expectedExit": 0,
+            "scope": "required-local",
+            "requirements": []
+          }
+        ]
+      }
+    }
+  ],
+  "implements": [
+    {
+      "name": "ourapps-ae/fair-shuffle-class",
+      "version": "1.0.0",
+      "digest": "c1d4c6e507d8bfdadc06f8e87ed065b4a42b3916c2bb3c5e15362b4c84c473b2"
+    }
+  ],
+  "upstream": [],
+  "compatibility": {
+    "runtimes": {
+      "node": ">=26.5.0 <27.0.0"
+    },
+    "frameworks": {},
+    "dependencies": [],
+    "styles": {
+      "scope": "none",
+      "namespaces": [],
+      "conflicts": []
+    }
+  },
+  "maintenance": {
+    "owners": [
+      "Level N Ltd"
+    ],
+    "contact": "https://github.com/ourapps-ae/fair-shuffle/issues",
+    "repository": "https://github.com/ourapps-ae/fair-shuffle",
+    "updates": {
+      "source": "https://github.com/ourapps-ae/fair-shuffle/releases",
+      "strategy": "manual"
+    }
+  },
+  "supportedPlatforms": [
+    "server"
+  ],
+  "licence": "Apache-2.0",
+  "licenceFile": "LICENCE",
+  "noticeFile": "NOTICE",
+  "templates": [],
+  "modules": {
+    "server": "server/index.ts"
   }
 }
