@@ -1,6 +1,6 @@
 {
   "name": "fair-shuffle",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "title": "Fair shuffle",
   "description": "Random numbers behind one interface: a seeded generator that tests can replay, a crypto-backed generator for play, and a Fisher-Yates shuffle over either.",
   "facilities": [
@@ -85,13 +85,17 @@
     {
       "reference": {
         "name": "ourapps-ae/fair-shuffle-class",
-        "version": "1.0.0",
-        "digest": "c1d4c6e507d8bfdadc06f8e87ed065b4a42b3916c2bb3c5e15362b4c84c473b2"
+        "version": "1.1.0",
+        "digest": "4474dcb3af7bf34088c30b2e5f75ca0304998eb6f92f4f912680d9a7e9826f27"
       },
       "descriptor": {
-        "format": 1,
+        "format": 2,
         "name": "ourapps-ae/fair-shuffle-class",
-        "version": "1.0.0",
+        "version": "1.1.0",
+        "title": "Fair shuffle",
+        "summary": "Uniform shuffles and random choices from a cryptographic or seeded source",
+        "category": "games/randomness",
+        "presentation": "none",
         "provides": [
           {
             "type": "ae/random-source",
@@ -162,8 +166,8 @@
   "implements": [
     {
       "name": "ourapps-ae/fair-shuffle-class",
-      "version": "1.0.0",
-      "digest": "c1d4c6e507d8bfdadc06f8e87ed065b4a42b3916c2bb3c5e15362b4c84c473b2"
+      "version": "1.1.0",
+      "digest": "4474dcb3af7bf34088c30b2e5f75ca0304998eb6f92f4f912680d9a7e9826f27"
     }
   ],
   "upstream": [],
@@ -227,5 +231,11 @@
         "manual": "Without the package manager, install Node 26 from nodejs.org (the installer, or the zip or tar archive with its folder put first on PATH); on Linux also from the NodeSource repository."
       }
     ]
-  }
+  },
+  "release": {
+    "channel": "features",
+    "fixes": []
+  },
+  "images": [],
+  "vulnerabilityWaivers": []
 }
