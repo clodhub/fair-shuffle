@@ -1,10 +1,10 @@
 {
-  "id": "ourapps-ae.fair-shuffle",
+  "id": "clodhub.fair-shuffle",
   "name": "Fair shuffle",
   "kind": "component",
   "status": "example",
-  "package": "ourapps-ae/fair-shuffle",
-  "version": "0.9.0",
+  "package": "clodhub/fair-shuffle",
+  "version": "0.10.0",
   "ports": [
     {
       "id": "random-source",

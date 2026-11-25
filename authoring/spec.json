@@ -1,6 +1,6 @@
 {
   "name": "fair-shuffle",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "title": "Fair shuffle",
   "description": "Random numbers behind one interface: a seeded generator that tests can replay, a crypto-backed generator for play, and a Fisher-Yates shuffle over either.",
   "facilities": [
@@ -40,7 +40,7 @@
     "server"
   ],
   "tools": {
-    "node": "26.5.0"
+    "node": "26.5"
   },
   "suites": [
     {
@@ -84,13 +84,13 @@
   "classes": [
     {
       "reference": {
-        "name": "ourapps-ae/fair-shuffle-class",
+        "name": "clodhub/fair-shuffle-class",
         "version": "1.1.0",
-        "digest": "4474dcb3af7bf34088c30b2e5f75ca0304998eb6f92f4f912680d9a7e9826f27"
+        "digest": "225de03fd7cdb6893c4afa96e10e883da253f492973a59464e30ff7962dcea69"
       },
       "descriptor": {
         "format": 2,
-        "name": "ourapps-ae/fair-shuffle-class",
+        "name": "clodhub/fair-shuffle-class",
         "version": "1.1.0",
         "title": "Fair shuffle",
         "summary": "Uniform shuffles and random choices from a cryptographic or seeded source",
@@ -129,7 +129,7 @@
           },
           {
             "path": "classes/fair-shuffle-class/random-source.json",
-            "digest": "84de99d834e0d221cfbf11d4307f6fe85bdbcfa802dcc936c702f4ac19d35552"
+            "digest": "5eac0904db9fdffaddff8cc83aba3753886bc49d8f5819ca10689b905ba66931"
           },
           {
             "path": "classes/fair-shuffle-class/runtime.mjs",
@@ -165,9 +165,9 @@
   ],
   "implements": [
     {
-      "name": "ourapps-ae/fair-shuffle-class",
+      "name": "clodhub/fair-shuffle-class",
       "version": "1.1.0",
-      "digest": "4474dcb3af7bf34088c30b2e5f75ca0304998eb6f92f4f912680d9a7e9826f27"
+      "digest": "225de03fd7cdb6893c4afa96e10e883da253f492973a59464e30ff7962dcea69"
     }
   ],
   "upstream": [],
@@ -187,10 +187,10 @@
     "owners": [
       "Level N Ltd"
     ],
-    "contact": "https://github.com/ourapps-ae/fair-shuffle/issues",
-    "repository": "https://github.com/ourapps-ae/fair-shuffle",
+    "contact": "https://github.com/clodhub/fair-shuffle/issues",
+    "repository": "https://github.com/clodhub/fair-shuffle",
     "updates": {
-      "source": "https://github.com/ourapps-ae/fair-shuffle/releases",
+      "source": "https://github.com/clodhub/fair-shuffle/releases",
       "strategy": "manual"
     }
   },

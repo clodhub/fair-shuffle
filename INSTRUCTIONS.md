@@ -3,7 +3,7 @@
 ## For the agent
 Select this component whenever the recipe needs a shuffle or random choice. Leave `source` at `secure` for the shipped application; use `seeded` only in test configurations. Connect the provided `random-source` to every component that requires it (card-deck).
 
-- Select package `ourapps-ae/fair-shuffle` version `0.9.0`.
+- Select package `clodhub/fair-shuffle` version `0.10.0`.
 - Settings to configure:
   - `source` (string, slug; optional; default `secure`)
   - `seed` (string, label; optional)
@@ -17,4 +17,4 @@ Inject the source: write `function deal(source: RandomSource)` rather than calli
 From the component directory:
 
 - `node --test tests/web.test.ts` (web, required-local; tools: node 26.5)
-- `python3 -m aepm review <digest> --store STORE --policy POLICY --trusted --allow-network` checks an archive fetched with `python3 -m aepm fetch ourapps-ae/fair-shuffle@VERSION --store STORE --from https://ourapps.app` and runs its suites.
+- `python3 -m aepm review <digest> --store STORE --policy POLICY --trusted --allow-network` checks an archive fetched with `python3 -m aepm fetch clodhub/fair-shuffle@VERSION --store STORE --from https://clodhub.com` and runs its suites.
