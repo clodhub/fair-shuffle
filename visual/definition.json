@@ -1,17 +1,17 @@
 {
-  "id": "clodhub.fair-shuffle",
+  "id": "com.clodhub.fair-shuffle",
   "name": "Fair shuffle",
   "kind": "component",
   "status": "example",
-  "package": "clodhub/fair-shuffle",
-  "version": "0.10.0",
+  "package": "pkg:clod/com.clodhub/fair-shuffle",
+  "version": "0.11.0",
   "ports": [
     {
       "id": "random-source",
       "name": "Random source",
       "direction": "output",
       "kind": "interface",
-      "type": "ae/random-source",
+      "type": "com.clodhub/random-source",
       "version": "1.0.0"
     }
   ],

@@ -1,6 +1,7 @@
 {
   "name": "fair-shuffle",
-  "version": "0.10.0",
+  "version": "0.11.0",
+  "sourceRevision": "19905b75dbea89fbfd424d67fe26c81aaed0e018",
   "title": "Fair shuffle",
   "description": "Random numbers behind one interface: a seeded generator that tests can replay, a crypto-backed generator for play, and a Fisher-Yates shuffle over either.",
   "facilities": [
@@ -12,7 +13,7 @@
   "provides": [
     {
       "id": "random-source",
-      "type": "ae/random-source",
+      "type": "com.clodhub/random-source",
       "version": "1.0.0",
       "path": "interfaces/random-source.json"
     }
@@ -84,13 +85,13 @@
   "classes": [
     {
       "reference": {
-        "name": "clodhub/fair-shuffle-class",
+        "name": "pkg:clod/com.clodhub/fair-shuffle-class",
         "version": "1.1.0",
-        "digest": "225de03fd7cdb6893c4afa96e10e883da253f492973a59464e30ff7962dcea69"
+        "digest": "2512dd98a1468fe8f98ec8e83c9974a989c2f7266eb4362874af8ad611db8cb7"
       },
       "descriptor": {
-        "format": 2,
-        "name": "clodhub/fair-shuffle-class",
+        "format": 3,
+        "name": "pkg:clod/com.clodhub/fair-shuffle-class",
         "version": "1.1.0",
         "title": "Fair shuffle",
         "summary": "Uniform shuffles and random choices from a cryptographic or seeded source",
@@ -98,7 +99,7 @@
         "presentation": "none",
         "provides": [
           {
-            "type": "ae/random-source",
+            "type": "com.clodhub/random-source",
             "version": "1.0.0",
             "path": "classes/fair-shuffle-class/random-source.json",
             "modules": {
@@ -129,11 +130,11 @@
           },
           {
             "path": "classes/fair-shuffle-class/random-source.json",
-            "digest": "5eac0904db9fdffaddff8cc83aba3753886bc49d8f5819ca10689b905ba66931"
+            "digest": "2b66a53cdf0efa6b59c741e197eb465db85a6eee29f237521ed2d13148235c78"
           },
           {
             "path": "classes/fair-shuffle-class/runtime.mjs",
-            "digest": "7440f3891614c423f74668cb5a2445fea58bbfa4d7c740c8e8a855d1d9300d43"
+            "digest": "1d85f0dae92d5c6c859cd48a4211a933718ae3e168554a2b00806183c4b661f0"
           }
         ],
         "verification": [
@@ -165,9 +166,9 @@
   ],
   "implements": [
     {
-      "name": "clodhub/fair-shuffle-class",
+      "name": "pkg:clod/com.clodhub/fair-shuffle-class",
       "version": "1.1.0",
-      "digest": "225de03fd7cdb6893c4afa96e10e883da253f492973a59464e30ff7962dcea69"
+      "digest": "2512dd98a1468fe8f98ec8e83c9974a989c2f7266eb4362874af8ad611db8cb7"
     }
   ],
   "upstream": [],
